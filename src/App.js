@@ -5,6 +5,7 @@ import Sobre from "./pages/Sobre.jsx";
 import Page404 from './pages/Page404';
 import Header from "./components/Header.jsx";
 import Post from './pages/Post';
+import Categoria from './pages/Categoria';
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/sobre" element={<Sobre></Sobre>}></Route>
           <Route path="/posts/:id" element={<Post></Post>}></Route>
+          <Route path="/categoria/:id/*" element={<Categoria></Categoria>}></Route>
           <Route path="*" element={<Page404></Page404>}></Route>
         </Routes>
       </Router>
